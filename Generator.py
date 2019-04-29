@@ -18,6 +18,9 @@ class Character(object):
 
         #im.show()
 
+        # Crop first column, as it is automatically generated (hardware-wise)
+        im = im.crop((self.dx, 0, im.size[0], im.size[1]))
+
         self.w = im.size[0] // self.dx
         self.h = im.size[1] // self.dy
         self.size = self.w * self.h
@@ -160,3 +163,8 @@ class Font(object):
     @staticmethod
     def to_hex_str(num):
         return '0x{0:0{1}X}'.format(num, 2)
+
+
+im = Image.open('46.JPG')
+im = im.crop((60, 0, im.size[0], im.size[1]))
+im.save('466.JPG')
