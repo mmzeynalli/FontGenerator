@@ -11,6 +11,7 @@ use that program was that, there were too many characters and different fonts I 
 to finish my project. 
 
 I was supposed to re-create already given font:
+
 ![Sample from FK Show 4.2.0.0](https://github.com/mmzeynalli/FontGenerator/blob/master/sample.JPG?raw=true)
 
 It was troublesome to copy dot-by-dot given all those characters with different size and fonts. Instead, I came up
